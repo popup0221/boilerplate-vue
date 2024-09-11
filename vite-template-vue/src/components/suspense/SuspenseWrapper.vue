@@ -2,7 +2,7 @@
 import { defineProps } from 'vue'
 
 interface SuspenseWrapper<T extends unknown[]> {
-  asyncFn: (...params: T) => Promise<T>
+	asyncFn: (...params: T) => Promise<T>
 }
 
 const props = defineProps<SuspenseWrapper<any>>();
